@@ -13,7 +13,7 @@ Det här repot innehåller koden för webbplatsen [ramschema-angular](https://ra
 * Uppgiften är publicerad till en publikt tillgänglig webbhost och går att testköra.
 * Källkoden är publicerad med hjälp av Git, tillsammans med en beskrivande README.md-fil som beskriver hur din applikation är konstuerad och fungerar.
 
-## Nedan besvarar jag hur jag har mött kraven för uppgiften.
+## Nedan besvarar jag hur jag har mött kraven för uppgiften:
 
 * Angular har använts för att skapa webbplatsen.
 * Servicen getschedule skapades och i den hämtades data som observables med hjälp av modulen HttpClient som hämtar JSON-data genom HTTP-protokollet. Metoden getSchedule() anropas för att data ska hämtas efter interfacet "ram".
