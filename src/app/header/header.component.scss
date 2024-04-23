@@ -1,0 +1,46 @@
+//Header styling
+header {
+    background-color: rgb(60, 60, 174);
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+}
+
+//Ikon styling
+#main-icon {
+    top: 10px;
+    left: 20px;
+    width: 60px;
+    position: absolute;
+}
+
+#icon-text{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+    font-weight: 500;
+    padding-top: 17px;
+}
+
+/*Media querie för extra små skärmar*/
+@media screen and (max-width: 350px) {
+
+    header {
+        height: 120px;
+    }
+
+    #icon-text{
+        padding-top: 70px;
+    }
+
+    //Ikon styling
+#main-icon {
+    transform: translate(-50%);
+    margin-left: 50%;
+    left: 0px;
+}
+
+}
