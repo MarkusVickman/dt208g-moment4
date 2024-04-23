@@ -1,0 +1,75 @@
+//Styling av tabell för utskrift av ramschema
+
+//Styling av sök-div
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 250px;
+    max-width: 100%;
+    position: relative;
+    left: -20px;
+}
+
+
+input {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+    width: 210px;
+    margin-left: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 30px;
+    font-weight: 600;
+}
+
+//Styling av table
+table {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 600px;
+}
+
+th {
+    background-color: rgb(76, 76, 187);
+    color: white;
+    padding: 3px 5px 3px 5px;
+    text-decoration: underline;
+}
+
+//Hover-effekt för att illustrera att den är klickbar
+th:hover {
+    background-color: rgb(127, 127, 211);
+    cursor: pointer;
+}
+
+//Varannan rad färgad
+tr:nth-child(even) {
+    background-color: #d8def3;
+}
+
+//Andra kolumnen ska ha texten vänsterställd 
+td:nth-child(2) {
+    text-align: left;
+}
+
+a {
+    color: black;
+}
+
+//Felmeddelande om sökning efter kurs inte gav resultat 
+#warning {
+    width: 600px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

@@ -1,1 +1,23 @@
-<p>scheduletable works!</p>
+<div class="search">
+    <label for="filter">Sök:</label>
+    <input type="text" id="filter" [(ngModel)]="searchInput" (input)="searchCourse()" placeholder="Sök kurs">
+</div>
+<table>
+    <tr>
+        <th (click)="sortByCode()">Kurskod</th>
+        <th (click)="sortByName()">Name</th>
+        <th (click)="sortByProgression()">Progression</th>
+    </tr>
+    <tr *ngFor="let row of filteredSchedule">
+        <td>
+            {{ row.code}}
+        </td>
+        <td>
+            <a href="{{row.syllabus}}">{{ row.coursename}}</a>
+        </td>
+        <td>
+            {{ row.progression}}
+        </td>
+</table>
+    <h3 *ngIf="filteredSchedule.length < 1" id="warning">Sökning efter "{{searchInput}}" gav inga resultat</h3>
+

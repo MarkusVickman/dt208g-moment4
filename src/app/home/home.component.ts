@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ScheduletableComponent } from '../scheduletable/scheduletable.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ScheduletableComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

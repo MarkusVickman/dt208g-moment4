@@ -1,10 +1,16 @@
 <!--Startsidans komponent-->
-<div id=hero-div><img src="assets/img/frontpage1.jpg" id="hero-img" alt="Bild på en miniräknare"></div>
 <main>
+    <app-scheduletable />
     <article>
-        <h1>Angular</h1>
-        <p>Den här webbplatsen är en exempelwebbplats utvecklad i Angular och är ett delmoment i kursen DT208G - Programmering i TypeScript. 
-            Förutom startsidan har den två undersidor,
-            ena innehåller en enhetsomvandlare och den andra innehåller information om webbplatsen.</p>
+        <h2>Om sidan</h2>
+        <p>Den här webbplatsen är utvecklad i Angular och är ett delmoment i kursen DT208G - Programmering i TypeScript. 
+            Ramschemat ovan är kurserna som ingår i min utbildning. Kursdata är hämtade som observables med Angulars HTTPClient. 
+            Listan går att söka i och den sökta listan går även att sortera. Det går att sortera listan efter kurskod, namn eller progression. 
+            Vid tryck på samma "knapp" igen sorteras listan i omvänd ordning. Vid klick på kursnamnen länkas användaren till 
+            kursplanen.
+        </p>
+        <p>
+            För mer information besök min <a href="https://github.com/MarkusVickman/dt208g-moment4">github</a> och läs readme-filen.
+        </p>
     </article>
 </main>
